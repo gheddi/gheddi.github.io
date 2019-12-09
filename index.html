@@ -1,1 +1,25 @@
-<h1>Hi,meet Gheddi</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <h1>hi, meet gheddi</h1>
+<script>
+  var hover = document.querySelector('h1');
+  hover.addEventListener('mouseover', onOver);
+  hover.addEventListener('mouseout', onOut);
+  function onOver(event){
+    event.target.textContent = 'i like javascript';
+    event.target.style.color = 'hotpink';
+
+  }
+  function onOut(event){
+    event.target.textContent = 'hi, meet gheddi';
+    event.target.style.color = 'black';
+  }
+</script>
+</body>
+</html>
